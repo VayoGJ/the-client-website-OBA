@@ -5,9 +5,10 @@
 
 ## Inhoudsopgave
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Bronnen](#bronnen)
+  * [Beschrijving](We hebben de opdracht gekregen om de gebruiksvriendelijkheid van de "mijn-omgeving" te verbeteren. Dit betekent dat we het "familie-overzicht" voor elk lid willen personaliseren en de gebruiksvriendelijkheid willen optimaliseren. We hebben specifiek gekeken naar twee situaties waar gebruikers behoefte aan hebben: het kunnen opslaan van boeken tijdens het zoeken en het ontvangen van persoonlijke boekentips. Het doel van deze opdracht is om leren voor iedereen toegankelijk te maken en mensen te stimuleren om blijvend te leren. Ons doel is om een vriendelijke en gebruiksvriendelijke "familie-overzicht" te creëren in de mijn-omgeving. )
+  * [Kenmerken](Visual Studio code, figma)
+  * [Bronnen](https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/
+  * https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
   * [Licentie](#licentie)
 
 ## Beschrijving
