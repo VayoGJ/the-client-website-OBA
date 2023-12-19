@@ -1,34 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <title>Familie overzicht</title>
-  </head>
-  <body>
-    <nav>
-      <img src="#" alt="profiel foto" />
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">boeken</a></li>
-        <li><a href="#">reserveringen</a></li>
-        <li><a href="#">locatie</a></li>
-      </ul>
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+    <script src="/scripts/script.js" defer></script>
+    <title>Oba by Misah</title>
+</head>
+<body>
+    <header>
+        <a href=".nav-mobile.html"><img class="menu" src="./assets/menu.png" alt="menu"></a>
+        <img src="./assets/oba_logo_RGB-rood.png" alt="oba logo" class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 6.5C7.5 8.981 9.519 11 12 11C14.481 11 16.5 8.981 16.5 6.5C16.5 4.019 14.481 2 12 2C9.519 2 7.5 4.019 7.5 6.5ZM20 21H21V20C21 16.141 17.859 13 14 13H10C6.14 13 3 16.141 3 20V21H20Z" fill="black"/>
+            </svg>
+    </header>
+
     <main>
-      <h1>Je account overzicht</h1>
-      inhoud account overzicht
+        <h1>Welkom Misah, In Mijn-Overzicht</h1>
+
+        <!-- v1 -->
+        <!-- <nav>
+                <button class="filter-button">Home</button>
+                <button class="filter-favorieten"> Favorieten</button>
+                <button class="filter-button">Aanraders van de week</button>
+                <button class="filter-button">Uitlenen en Verlengen</button>
+        </nav> -->
+
+        <!-- v2 -->
+        <section class="section_nav">
+            <button id="reserverenFilterButton">Reserveren</button>
+            <button id="favorietenFilterButton">Favorieten</button>
+            <button id="aanradersFilterButton">Aanraders van de week</button>
+            <button id="uitlenenFilterButton">Uitlenen en verlengen</button>
+        </section>
+
+
+        <section class="reserveren">
+            <img src="./assets/it ends with us.jpeg">
+            <h2>RESERVEREN</h2>
+            <button class="genre romantisch">ROMANTISCH</button>
+            <h3>It Ends With Us</h3>
+            <p><b>Geschreven door Colleen Hoover,</b>verkent 'It Ends With Us' op meesterlijke wijze de complexiteit van liefde en moed...</p>
+            <button class="zielijst">ZIE VOLLEDIGE LIJST</button>
+        </section>
+
+        <section class="favoriete">
+            <h2>FAVORIETEN</h2>
+            <img class="book1" src="./assets/love on the brain cover.jpeg">
+            <img class="like1" src="./assets/heart.png" alt="like">
+            <img class="book2" src="./assets/six crimson cranes cover.jpeg">
+            <img class="like2" src="./assets/heart.png" alt="like">
+        </section>
+
+        <section class="aanraders">
+            <h2>DEZE WEEK AANRADERS</h2>
+            <h3 class="title1">Twisted Games</h3>
+            <button class="genre literatuur">LITERAARTUUR</button>
+            <p class="brood1"><b>Geschreven door Ana Huang,</b> voert 'Twisted Games' je mee in een wereld vol intriges en duistere verlangens, waar levens op het spel staan. Durf jij deel te nemen aan dit dodelijke schaakspel van de geesten?"</p>
+            <img class="book1" src="./assets/twisted games.jpeg">
+            <hr>
+            <h3 class="title2">The Seven Husbands Of Evelyn Hugo</h3>
+            <button class="genre romantisch">Thriller</button>
+            <p class="brood2"><b>Geschreven door Taylor Jenskins Reid,</b> Duik in het verbluffende en raadselachtige leven van de iconische Hollywood-ster in 'De Zeven Echtgenoten van Evelyn Hugo', waar ze de onvertelde verhalen van liefde, ambitie en de tol van roem onthult.</p>
+            <img src="./assets/the hunsting moon.jpeg">
+
+            <button class="zielijst">ZIE VOLLEDIGE LIJST</button>
+        </section>
+
+        <section class="lenen">
+            <h2>UITLENEN EN VERLENGEN</h2>
+            <hr>
+            <p>It ends with us / Colleen Hoover<span>3/10/2023</span></p>
+            <hr>
+            <p>It ends with us / Colleen Hoover<span>3/10/2023</span></p>
+            <button class="zielijst">ZIE VOLLEDIGE LIJST</button>
+        </section>
+
     </main>
+
     <footer>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Terms&Conditions</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
+
     </footer>
-  </body>
+</body>
 </html>
-.
+
+
+<!-- v1 -->
+<!-- <script>
+    // hier haal je je objecten op 
+    let filterFavorieten = document.querySelector(".filter-favorieten")
+    let reserveringen = document.querySelector(".reserveren")
+    // filterFavorieten.style.backgroundColor = "red";
+
+    // object aanspreken en actie geven
+    filterFavorieten.addEventListener("click",filterHandler)
+
+    // functie
+    function filterHandler(){
+        // reserveringen.classlist.toggle("hidden");
+
+        // als op de knop geklikt word gaat weg
+        // reserveringen.style.display="none"; 
+
+        filterFavorieten.addEventListener("click", () => {
+        reserveringen.classList.toggle("-hidden");
+})
+    }
+</script> -->
+
+
+
+<!-- v2 -->
+<!-- <script>
+    let filterFavorieten = document.querySelector(".filter-favorieten")
+    let reserveringen = document.querySelector(".reserveren")
+
+    filterFavorieten.addEventListener("click", filterHandler)
+
+    function filterHandler() {
+        reserveringen.classList.toggle("hidden")
+        
+    }
+</script> -->
+
+
+
+
+<!-- v3 -->
+<!-- <script>
+    let filter-favorieten = document.querySelector (".filter-favorieten")
+    let reserveringen = document.querySelector(".reserveren")
+
+    filterFavorieten.addEventListener("click", ()= {
+        reserveringen.classList.toggle("hidden")
+    })
+</script> -->
